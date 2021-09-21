@@ -1,0 +1,98 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+// Header start
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    img {
+      margin-right: 50px;
+    }
+    a {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      padding: 7px 13px;
+      border: 1px solid $text;
+      margin-top: 20px;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__nav-inner {
+    display: flex;
+  }
+  &__nav-item {
+    text-transform: uppercase;
+    margin-left: 50px;
+    transition: all 0.2s;
+    &:hover {
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+  &__btn {
+    padding: 20px 100px 20px 30px;
+    background-color: $blue;
+    margin-left: 25px;
+    position: relative;
+    img{
+      max-width: 32px;
+      height: 23px;
+    }
+  }
+}
+
+// Header end
+
+.screen {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 100vh;
+  margin-top: 100px;
+  &__art{
+    &-left{
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+        &-center{
+      position: absolute;
+      right: 20%;
+      top: 0;
+      max-width: 600px;
+      width: 100%;
+      z-index: 1;
+    }
+        &-right{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+}
+.social{
+  display: flex;
+  position: absolute;
+  top: 490px;
+  left: 20px;
+  max-width: 220px;
+  &__link{
+margin: 0 10px;
+  }
+}
