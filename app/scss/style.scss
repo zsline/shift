@@ -271,8 +271,52 @@
     }
   }
 }
-.control-a{
-position: absolute;
-bottom: 5px;
-left: -80px;
+.control-a {
+  position: absolute;
+  bottom: 5px;
+  left: -80px;
+}
+
+//About end
+.footer {
+  background-color: #c4c4c4;
+  color: #fff;
+  padding: 60px 0 140px 50px;
+  &__contant {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contact {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__title h2 {
+    color: #fff;
+    padding: 40px 0 50px;
+  }
+  &__adress {
+  }
+  &__name {
+    margin: 26px 0;
+  }
+  &__phone {
+    padding-left: 60px;
+    &::before {
+      content: "";
+      background-image: url();
+    }
+  }
+  &__mail {
+    padding-left: 60px;
+    margin: 26px 0;
+    &::before {
+      content: "";
+      background-image: url();
+    }
+  }
+  &__map {
+    width: 820px;
+    height: 580px;
+  }
 }
