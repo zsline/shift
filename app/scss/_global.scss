@@ -4,6 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: $text;
+  user-select: none;
 }
 *,
 ** {
@@ -17,6 +18,9 @@ h2 {
 }
 a {
   color: inherit;
+}
+section{
+  margin-top: 70px;
 }
 .wrapper {
   display: flex;

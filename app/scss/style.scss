@@ -64,7 +64,6 @@
   justify-content: space-between;
   position: relative;
   height: 100vh;
-  margin-top: 100px;
   &__art {
     &-left {
       position: absolute;
@@ -92,6 +91,7 @@
   top: 490px;
   left: 20px;
   max-width: 220px;
+
   &__link {
     margin: 0 10px;
   }
@@ -99,6 +99,7 @@
 // Главная end
 // Місія start
 .mission {
+  margin-top: 0;
   &__title {
     position: relative;
     text-align: center;
@@ -152,4 +153,126 @@
 }
 .prev {
   bottom: 55px;
+}
+// Місія end
+// Art start
+
+.art {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: bottom 20px right 45%;
+  z-index: 21;
+  padding-bottom: 100px;
+  &__title {
+    margin: 0 0 70px 60px;
+  }
+  &__list {
+    &-item {
+      padding: 14px 230px 14px 130px;
+      height: 86px;
+      max-width: 660px;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      transition: all 0.3s;
+      border-radius: 0 43px 43px 0;
+      position: relative;
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 80px;
+      }
+
+      .p {
+        max-width: 330px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+  &__decor {
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+    // height: 710px;
+  }
+}
+.orang {
+  &:hover {
+    background-color: $orang;
+    color: #fff;
+  }
+}
+.blue {
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+  }
+}
+.accent {
+  &:hover {
+    background-color: $accent;
+    color: #fff;
+  }
+}
+// Art end
+//About start
+.about {
+  margin-top: 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    margin-left: 60px;
+  }
+  &__title {
+  }
+  &__text {
+    width: 500px;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 50px 0 74px 0;
+  }
+  &__btn {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    a {
+      background-color: $blue;
+      padding: 20px 88px;
+      color: #fff;
+    }
+  }
+  &__slider {
+    border: 10px solid #ff6450;
+    box-sizing: border-box;
+    max-width: 704px;
+    height: 555px;
+    position: relative;
+    .prev {
+      bottom: 55px;
+    }
+  }
+}
+.control-a{
+position: absolute;
+bottom: 5px;
+left: -80px;
 }
