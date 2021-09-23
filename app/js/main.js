@@ -6,8 +6,8 @@ $(function () {
     fade: true,
     cssEase: 'linear',
     arrows: true,
-    prevArrow: "<img class='a-left control-c prev slick-prev' src='../images/prew-arrow.svg'>",
-    nextArrow: "<img class='a-right control-c next slick-next' src='../images/next-arrow.svg'>"
+    prevArrow: "<img class='a-left control-c prev slick-prev' src='../app/images/prew-arrow.svg'>",
+    nextArrow: "<img class='a-right control-c next slick-next' src='../app/images/next-arrow.svg'>"
 
   });
   $('.about__slider').slick({
@@ -17,8 +17,8 @@ $(function () {
     fade: true,
     cssEase: 'linear',
     arrows: true,
-    prevArrow: "<img class='a-left control-a prev slick-prev' src='../images/prew-arrow.svg'>",
-    nextArrow: "<img class='a-right control-a next slick-next' src='../images/next-arrow.svg'>"
+    prevArrow: "<img class='a-left control-a prev slick-prev' src='../app/images/prew-arrow.svg'>",
+    nextArrow: "<img class='a-right control-a next slick-next' src='../app/images/next-arrow.svg'>"
 
   });
 })
