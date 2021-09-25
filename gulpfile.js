@@ -11,7 +11,8 @@ const del           = require('del');
 function browsersync() {
   browserSync.init({
     server : {
-      baseDir: 'app/'
+      baseDir: 'app/',
+      index: "page.html"
     }
   });
 }
@@ -42,6 +43,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))

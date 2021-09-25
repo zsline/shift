@@ -21,4 +21,16 @@ $(function () {
     nextArrow: "<img class='a-right control-a next slick-next' src='../app/images/next-arrow.svg'>"
 
   });
-})
+  $('.masters__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: true,
+    prevArrow: "<img class='a-left control-a prev slick-prev' src='../images/prew-arrow.svg'>",
+    nextArrow: "<img class='a-right control-a next slick-next' src='../images/next-arrow.svg'>"
+
+  });
+});
+var mixer = mixitup('.magasine__inner');
