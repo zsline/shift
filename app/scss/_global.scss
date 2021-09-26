@@ -20,14 +20,22 @@ h3 {
 
 a {
   color: inherit;
+  display: block;
 }
 section {
   margin-top: 70px;
+  width: 100%;
+
+}
+button{
+  cursor: pointer;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 100%;
+  
 }
 
 .main {
@@ -35,11 +43,11 @@ section {
 }
 .footer {
   flex: 0 0 auto;
-  margin-top: 80px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1410px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -136,6 +144,21 @@ section {
     height: 116px;
     position: absolute;
     background-image: url(../images/new.png);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    // z-index: 2;
+  }
+}
+
+.sale-box {
+  position: relative;
+  &::before {
+    content: "";
+    width: 113px;
+    height: 116px;
+    position: absolute;
+    background-image: url(../images/sale.png);
     background-repeat: no-repeat;
     top: 0;
     left: 0;
