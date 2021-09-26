@@ -29,8 +29,15 @@ $(function () {
     cssEase: 'linear',
     arrows: true,
     prevArrow: "<img class='a-left control-a prev slick-prev' src='../images/prew-arrow.svg'>",
-    nextArrow: "<img class='a-right control-a next slick-next' src='../images/next-arrow.svg'>"
-
+    nextArrow: "<img class='a-right control-a next slick-next' src='../images/next-arrow.svg'>",
+responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: false
+        }
+      },
+    ]
   });
   $('.sale__slider').slick({
     dots: true,
@@ -52,6 +59,7 @@ $(function () {
       {
         breakpoint: 888,
         settings: {
+
           slidesToShow: 2,
           slidesToScroll: 1
         }

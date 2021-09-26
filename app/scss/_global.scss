@@ -25,9 +25,8 @@ a {
 section {
   margin-top: 70px;
   width: 100%;
-
 }
-button{
+button {
   cursor: pointer;
 }
 .wrapper {
@@ -35,20 +34,84 @@ button{
   flex-direction: column;
   min-height: 100%;
   min-width: 100%;
-  
 }
 
 .main {
   flex: 1 0 auto;
 }
+
 .footer {
+  background-color: #c4c4c4;
+  color: #fff;
   flex: 0 0 auto;
+  padding-top: 50px;
+  &__buttom {
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #fff;
+    font-weight: 100;
+  }
+  &__contant {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contact {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 50px;
+  }
+  &__title h2 {
+    color: #fff;
+    padding: 40px 0 50px;
+  }
+  &__name {
+    margin: 26px 0;
+  }
+  &__phone {
+    padding-left: 60px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../images/phone.svg");
+      width: 45px;
+      height: 45px;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      background-repeat: no-repeat;
+    }
+  }
+  &__mail {
+    padding-left: 60px;
+    margin: 26px 0;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../images/mail.svg");
+      width: 23px;
+      height: 23px;
+      left: 10px;
+      top: 5px;
+      z-index: 2;
+      background-repeat: no-repeat;
+    }
+  }
+  &__map {
+    max-width: 820px;
+    height: 580px;
+  }
 }
+  
+
 
 .container {
   max-width: 1410px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 15px;
 }
 .info-btn {
@@ -71,6 +134,46 @@ button{
     }
   }
 }
+
+.menu__btn {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  span {
+    margin: auto;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+  }
+}
 .social {
   display: flex;
   max-width: 220px;
@@ -84,6 +187,7 @@ button{
   height: 645px;
   margin: 10px;
   &__inner {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,6 +202,7 @@ button{
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    position: relative;
     img {
       max-width: 334px;
       height: 334px;
@@ -152,6 +257,7 @@ button{
 }
 
 .sale-box {
+  width: 380px;
   position: relative;
   &::before {
     content: "";
@@ -161,7 +267,7 @@ button{
     background-image: url(../images/sale.png);
     background-repeat: no-repeat;
     top: 0;
-    left: 0;
+    left: 0px;
     // z-index: 2;
   }
 }
@@ -193,4 +299,20 @@ button{
   line-height: 29px;
   text-align: center;
   padding-top: 18%;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  }
+}
+.slick-slide {
+  div {
+    margin: 0 auto;
+    display: table;
+  }
+}
+.magasine__btn {
+  margin-bottom: 20px;
+}
+.magasine .magasine__controls {
+  text-align-last: center;
 }

@@ -1,0 +1,122 @@
+@media (max-width: 1440px) {
+  .banner {
+    background-position: 410px 0;
+  }
+  .banner__img {
+    margin-right: 0;
+  }
+  .mission__title {
+    text-align: left;
+    margin-left: 15px;
+  }
+  .control-a {
+    transform: translateY(-150px);
+  }
+}
+@media (max-width: 1270px) {
+  .mission__inner {
+    display: block;
+  }
+  .menu__btn {
+    display: flex;
+  }
+  .header__btn {
+    img {
+      transform: rotate(0);
+    }
+  }
+  .banner {
+    background-image: none;
+  }
+  .header__nav-inner {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .mission__inner {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .mission__title::after {
+    width: 0;
+    height: 0;
+  }
+}
+@media (max-width: 780px) {
+  .banner__img {
+    display: none;
+  }
+  .footer__contant {
+    flex-direction: column;
+  }
+  .footer__contact {
+    margin-left: 50px;
+  }
+  .card{
+    align-items: center;
+  }
+  .card__img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    img {
+      height: 250px;
+    }
+  }
+  .card__inner {
+    width: 300px;
+    height: 300px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 630px) {
+  .masters__slider {
+    height: 100%;
+  }
+  .masters .mission__text {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .masters__decor {
+    background-image: none;
+  }
+  .header__logo a {
+    display: none;
+  }
+  .banner__info-subtext {
+    right: -50px;
+  }
+}
+@media (max-width: 450px) {
+  .banner__info {
+    margin: 50px 10px;
+  }
+  .banner__info-price {
+    right: -180px;
+  }
+  .banner__info-subtext {
+    display: none;
+  }
+  .banner__info-title {
+    font-size: 60px;
+  }
+  .info-btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .footer__contant {
+    flex-direction: column;
+  }
+  .footer__contact {
+    margin: 0 20px;
+  }
+}
